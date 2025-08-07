@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Import Inter and Smythe fonts from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
+        
+        <!-- Link Stylesheet -->
+        <link rel="stylesheet" href="index.css">
+
+        <title>Jimmy's Diner</title>
+    </head>
+    <body>
+        <header>
+            <div class="content-container">
+                <h1 class="no-margin-txt no-bold">Jimmy's Diner</h1>
+                <h3 class="no-bold">The best burgers and pizza in town.</h3>
+            </div>
+        </header>
+
+        <main>
+            <section class="content-container" id="menu-section"></section>
+            <section class="content-container" id="order-details-section"></section>
+        </main>
+
+        <!-- Modal -->
+        <div class="modal hide-container" id="modal">
+            <form class="modal-form" id="payment-form">
+                <h3 class="modal-form-title">Enter card details</h3>
+                <input 
+                    type="text"
+                    class="payment-form-input"
+                    name="name-input"
+                    placeholder="Enter your name"
+                    pattern = "[a-z A-Z]{1,}"
+                    title = "Must only contain letters."
+                    required
+                >
+                <input 
+                    type="text"
+                    class="payment-form-input"
+                    name="card-number-input"
+                    placeholder="Enter card number"
+                    pattern = "^([0-9]{4}[ ][0-9]{4}[ ][0-9]{4}[ ][0-9]{4})$"
+                    title = "Must contain 16 numbers with a space between every 4 numbers."
+                    required
+                >
+                <input 
+                    type="text"
+                    class="payment-form-input"
+                    name="cvv-input"
+                    placeholder="Enter cvv"
+                    pattern = "[0-9]{3}"
+                    title = "Must contain exactly 3 numbers."
+                    required
+                >
+                <button class="modal-form-btn pointer-cursor-hover" type="submit">Pay</button>
+            </form>
+        </div>
+	    <script src="./scripts/index.js" type="module"></script>
+    </body>
+</html>
+

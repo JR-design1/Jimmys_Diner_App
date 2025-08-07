@@ -1,0 +1,260 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Smythe", sans-serif;
+} 
+
+main{
+    padding-bottom: 53px;
+}
+
+.content-container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.no-bold{
+    font-weight: 400;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+.hide-container{
+    display: none;
+}
+
+.black-border-bottom{
+    border-bottom: 2px solid #393333;
+}
+
+.no-margin-txt{
+    margin: 0;
+}
+
+.pointer-cursor-hover:hover{
+    cursor: pointer
+}
+
+/* Header Styling */
+header h1{
+    line-height: 24px;
+    font-size: 2.4375rem;
+}
+
+header h3{
+    margin: 19px 0 0 0;
+    font-size: 1.375rem;
+    line-height: 0.64;
+}
+
+header .content-container{
+    color: white;
+    background-image: url("./images/hamburger.jpg");
+    background-size: 100%;
+    background-position: 0 -153px;
+    height: 167px;
+    padding: 46px 0 0 46px;
+    margin-bottom: 67px;
+    box-sizing: border-box;
+}
+
+/* Menu Section Styling */
+#menu-section h2{
+    font-size: 1.75rem;
+}
+
+#menu-section h4{
+    font-size: 1.25rem;
+}
+
+#menu-section p{
+    color: #8B8B8B;
+}
+
+.add-item{
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    color: #3C3C3C;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+
+    padding: 11px;
+    width: 50px;
+    height: 50px;
+    margin: 8px 0 0 auto;
+    box-sizing: border-box;
+}
+
+.menu-item{
+    display: flex;
+    align-items: flex-start;
+    margin: 45px 46px 0 46px;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 0 0 51px 0;
+}
+
+.emoji-container{
+    height: 89px;
+    width: 70px;
+    margin-right: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-emoji{
+    font-size: 4.9375rem;
+    font-style: normal;
+    font-family: "Inter", sans-serif;
+    opacity: 72%;
+    line-height: 1.25;
+}
+
+.item-details-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Order Details Section Styling */
+#order-details-section{
+    height: 319px;
+    width: 508px;
+    margin: 45px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.your-order-container{
+    height: calc(53% - 28px);
+    padding: 0 0 28px 0;
+}
+
+.total-price-container{
+    height: calc(47% - 2px - 14px);
+    margin: 14px 0 0 0;
+}
+
+.order-details-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.order-details-title{
+    margin: 0 0 auto 0;
+    align-self: center;
+}
+
+.item-name-remove-btn-container{
+    display: flex;
+    align-items: center;
+}
+
+.order-btn{
+    margin: auto 0 0 0;
+    height: 60px;
+    border: none;
+    border-radius: 3px;
+    background-color: #16DB99;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.order-placed-txt{
+    text-align: center;
+    margin: 0 2px;
+    font-size: 2rem;
+    line-height: 0.525;
+    padding: 51px 0;
+    border-radius: 3px;
+    color: #065F46;
+    background-color: #ECFDF5;
+}
+
+.order-details-container-txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-name-order-details-txt{
+    display: inline-block;
+}
+
+.remove-item-from-order-btn{
+    padding: 0;
+    border: none;
+    background-color: white;
+    margin: 0 0 0 12px;
+    color: #BBBBBB;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+/* Modal Styling */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 524px;
+    height: 542px;
+    background-color: white;
+    border: 1px solid #757575;
+    border-radius: 4px;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin: 30px 24px;
+    height: calc(100% - 60px);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.modal-form-title{
+    align-self: center;
+    margin: 17px 0 auto 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.payment-form-input{
+    font-size: 1.25rem;
+    font-family: inherit;
+    padding: 0 26px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    height: 72px;
+}
+
+.modal-form-btn{
+    margin: auto 0 0 0;
+    padding: 16px 210px;
+    border-radius: 4px;
+    border: none;
+
+    background-color: #16DB99;
+
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
